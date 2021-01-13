@@ -1,3 +1,13 @@
-user_input = int(input())
+user_input = input()
 
-print('W', 'o'* user_input, 'w!', sep='')
+def single(n):
+	if len(n) == 1:
+		# return int(n)
+		print(n)
+	else:
+		t = sum([int(x) for x in n])
+		single(str(t))
+
+
+single(user_input)
+
