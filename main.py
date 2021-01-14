@@ -1,13 +1,2 @@
-user_input = input()
-
-def single(n):
-	if len(n) == 1:
-		# return int(n)
-		print(n)
-	else:
-		t = sum([int(x) for x in n])
-		single(str(t))
-
-
-single(user_input)
-
+user_input = sum(list(map(lambda x: 181 if int(x) == 0 else int(x) , input().split())))
+print('Yes' if user_input == 180 else 'No')
